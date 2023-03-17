@@ -1,0 +1,177 @@
+
+<form class="example-form">
+    <div class="tbl">
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td>
+        <!-- <div  class="lblform">
+        <mat-label>firstname:</mat-label>
+        <mat-label>lastname:</mat-label>
+        <mat-label>Email:</mat-label>
+        <mat-label>Password:</mat-label>
+        <mat-label>city:</mat-label>
+        <mat-label>State:</mat-label>
+        <mat-label>Gender:</mat-label>
+      </div> -->
+        <mat-form-field class="example-full-width" >
+        <mat-label >First name</mat-label>
+        <input matInput [(ngModel)]="FirstName" name="FirstName" >
+      </mat-form-field>
+    </td>
+    
+      <td>
+        <mat-form-field class="example-full-width">
+        <mat-label>Last name</mat-label>
+        <input matInput [(ngModel)]="LastName" name="LastName">
+      </mat-form-field></td></tr>
+      <tr>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" [(ngModel)]="Email" name="Email">
+        </mat-form-field>
+      
+      </td>
+ 
+        <td><mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" [(ngModel)]="Password" name="Password">
+        </mat-form-field></td></tr>
+    </table>
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>City</mat-label>
+        <input matInput placeholder="">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>State</mat-label>
+        <input matInput placeholder="">
+      </mat-form-field></td>
+    </tr>
+    <tr>
+        <td><mat-form-field appearance="fill">
+            <mat-label>Gender</mat-label>
+            <mat-select disableRipple [(ngModel)]="Gender" name="Gender">
+              <mat-option value="Male">male</mat-option>
+              <mat-option value="Female">female</mat-option>
+            </mat-select>
+          </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <mat-label>Birthday</mat-label>
+          <input matInput placeholder="Birthday" type="date" [(ngModel)]="Birthday" name="Birthday">
+        </mat-form-field></td>
+      </tr>
+    
+      <!-- <tr><td>
+        <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+      </td></tr> -->
+
+</table>
+</div>
+<button mat-raised-button class="btnsub" (click)="onsubmit()">Submit</button>
+<button mat-raised-button class="btndel" (click)="ondelete()">Delete</button>
+  </form>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+<div mat-dialog-content>
+  
+  <mat-form-field appearance="fill">
+    <div class="container1" >
+        <div class="close"  (click)="closeup()">&times;</div>
+        <div class="avatar"></div>
+        <form action="">
+            <div class="labels">
+        <label for="">Name:</label>
+        <br>
+        <label for="">Family:</label>
+        <br>
+        <label for="">Gender:</label>  
+        <br>
+        <label for="">Email:</label>
+        <br>
+        <label for="">Password:</label>
+        </div>
+        <div class="inputs">
+            <input type="text" name="FirstName" [(ngModel)]="FirstName">
+            <br>
+            <input type="text" name="LastName" [(ngModel)]="LastName">
+            <br>
+            <select name="Gender" id="" [(ngModel)]="Gender">
+                <option value="female">female</option>
+                <option value="male">male</option>
+            </select>
+            <br> 
+            <input type="email" name="Email" [(ngModel)]="Email">
+            <br>
+            <input type="password" name="Password" [(ngModel)]="Password" required>
+        </div>
+    
+        <br><br>
+        <div class="section2">
+        <label for="" >Birthday:</label>
+        <input type="date" value="2023-09-03" name="Birthday" id="date" [(ngModel)]="Birthday">
+        <br><br>
+        <label for="">State:</label>
+        <select name="city1" class="select-city"  (selectionChange)="change($event)">
+           
+            <option value="" *ngFor="let state of dataSourceSelect" [value]="state.value">{{state.value}}</option>
+        </select>
+        
+        <label for="" class="lblcity">City:</label>
+        <select name="city2" disabled class="select-city"  (selectionChange)="change($event)">
+            <option value=""*ngFor="let state of dataSource" [value]="state.value">{{state.value}}</option>
+        </select>
+        <br><br>
+    </div>
+    
+    <div mat-dialog-actions>
+        <button class="btn-sub" mat-button (click)="onsubmit1()">Submit</button>
+        <button class="btn-del"mat-button (click)="ondelete()">Delete</button>
+        </div>
+    </form>
+    </div>
+  
+   
+  </mat-form-field>
+</div>
+ -->
